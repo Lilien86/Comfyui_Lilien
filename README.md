@@ -1,8 +1,9 @@
 # 🎨 lauger NodePack for ComfyUI
 
-#### Welcome to my Custom ComfyUI Nodes Pack repository! This project contains a vibrant collection of custom nodes designed to extend the functionality of ComfyUI. These nodes offer advanced capabilities and bring new creative possibilities, especially in the realms of latent space manipulation and interpolation.
+[![baniere](https://github.com/user-attachments/assets/c84f68f1-3cbb-4d59-9677-0a4a67ec3d67)](https://github.com/user-attachments/files/16829155/latent_interpolator_with_ksampler.json)
+### Copie Workflow ⬆️
+#### Hey everyone it's my Custom ComfyUI Nodes Pack repository! This project contains a collection of custom nodes designed to extend the functionality of ComfyUI. These nodes offer capabilities and new creative possibilities, especially in the realms of latent space manipulation and interpolation.
 
-![baniere](https://github.com/user-attachments/assets/c84f68f1-3cbb-4d59-9677-0a4a67ec3d67)
 
 ## 📚 Table of Contents
 
@@ -23,8 +24,10 @@ To install the custom nodes in this repository, follow these easy steps:
 
 > ### 🎛️ LatentInterpolatorMulti
 >
-> The **LatentInterpolatorMulti** node is a powerful and versatile tool for interpolating between two latent vectors using a variety of mathematical algorithms. It's perfect for generating smooth, visually appealing transitions within the latent space of models like GANs.
 >
+> The **LatentInterpolatorMulti** The LatentInterpolatorMulti node is a  tool for interpolating between two latent vectors using a variety of mathematical algorithms. It's perfect for generating smooth transitions within the latent space of models like GANs.
+>
+>[![presentation](https://github.com/user-attachments/assets/7fe183cb-5e9e-48d0-9024-1f2514ae6603)](https://github.com/user-attachments/files/16829155/latent_interpolator_with_ksampler.json)
 > #### 🌟 Key Features
 >
 > - **🌐 Multiple Interpolation Algorithms**: Choose from a range of interpolation methods, including:
@@ -60,5 +63,3 @@ To install the custom nodes in this repository, follow these easy steps:
 > #### 🎯 Output Types
 >
 > - **latent**: The resulting interpolated latent vector (`LATENT`).
->
-> Dive into the world of creative interpolation and latent space exploration with the **LatentInterpolatorMulti** node!
