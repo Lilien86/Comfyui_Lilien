@@ -1,13 +1,13 @@
 # 🎨 lauger NodePack for ComfyUI
 
-#### Welcome to my Custom ComfyUI Nodes Pack repository! This project contains a vibrant collection of custom nodes designed to extend the functionality of ComfyUI. These nodes offer advanced capabilities and bring new creative possibilities, especially in the realms of latent space manipulation and interpolation.
+#### Welcome to my Custom ComfyUI Nodes Pack repository! This project contains my collection of custom nodes designed to extend the functionality of ComfyUI.
 
 ![baniere](https://github.com/user-attachments/assets/c84f68f1-3cbb-4d59-9677-0a4a67ec3d67)
 
 ## 📚 Table of Contents
 
-- [✨ Installation](#installation)
-- [🔍 Node Overview](#node-overview)
+- [✨ Installation](#-installation)
+- [🔍 Node Overview](#-node-overview)
 
 ## ✨ Installation
 
