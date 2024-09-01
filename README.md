@@ -10,7 +10,7 @@
 
 - Node Overview
 
-#### Instalation
+### Instalation
 
 To install the custom nodes in this repository, follow these steps:
 
@@ -20,24 +20,24 @@ git clone https://github.com/yourusername/custom-comfyui-nodes.git
 ```
 3. Restart ComfyUI to load the new nodes.
 
-#### Node Overview
+### Node Overview
 
-##### LatentInterpolatorMulti
+#### LatentInterpolatorMulti
 
 The LatentInterpolatorMulti node is a powerful tool for interpolating between two latent vectors using various mathematical algorithms. This node is particularly useful for generating smooth transitions in the latent space of models, such as those used in generative adversarial networks (GANs).
 
-###### Key Features
+##### Key Features
 
 - **Multiple Interpolation Algorithms**: Choose from a variety of interpolation algorithms including Linear, Quadratic, Cubic, Sinusoidal, Noise-Weighted, Random-Weighted, Per-Channel, and Logarithmic.
 - **Adjustable Mixing Factor**: Control the degree of interpolation with a customizable mixing factor.
 - **Automatic Compatibility Handling**: Ensures latent vectors of different dimensions or sizes are correctly aligned before interpolation.
 
-###### Input Types
+##### Input Types
 
 - **latent1**: The first latent vector (`LATENT`).
 - **latent2**: The second latent vector (`LATENT`).
 
-###### Optional Parameters
+##### Optional Parameters
 
 - **interpolation_algorithm**: The algorithm to use for interpolation. Options include:
   - Linear
@@ -50,6 +50,6 @@ The LatentInterpolatorMulti node is a powerful tool for interpolating between tw
   - Logarithmic
 - **mixing_factor**: A float value between `0.0` and `1.0`, determining the influence of each latent vector in the interpolation.
 
-###### Output Types
+##### Output Types
 
 - **latent**: The resulting interpolated latent vector (`LATENT`).
