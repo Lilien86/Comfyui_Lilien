@@ -1,7 +1,7 @@
 import torch
 
 class LatentPrinter:
-    CATEGORY = "lauger_NP"
+    CATEGORY = "lilien/latent"
 
     @classmethod
     def INPUT_TYPES(cls):

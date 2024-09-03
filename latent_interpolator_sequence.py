@@ -2,7 +2,7 @@ import torch
 import model_management
 
 class LatentInterpolatorSequences:
-    CATEGORY = "lauger_NP"
+    CATEGORY = "lilien/latent"
 
     def __init__(self):
         self.dtype = torch.float32

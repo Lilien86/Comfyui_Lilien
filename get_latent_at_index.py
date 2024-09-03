@@ -1,7 +1,7 @@
 import torch
 
-class LatentLooper:
-    CATEGORY = "lauger_NP"
+class GetLatentAtIndex:
+    CATEGORY = "lilien/latent"
 
     def __init__(self):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

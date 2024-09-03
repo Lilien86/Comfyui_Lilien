@@ -2,7 +2,7 @@ import torch
 import model_management
 
 class LatentInterpolatorMulti:
-    CATEGORY = "lauger_NP"
+    CATEGORY = "lilien/latent"
 
     def __init__(self):
         # Initialize the data type for tensor operations
