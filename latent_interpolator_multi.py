@@ -5,7 +5,11 @@ class LatentInterpolatorMulti:
     CATEGORY = "lauger_NP"
 
     def __init__(self):
+        # Initialize the data type for tensor operations
         self.dtype = torch.float32
+        
+        # Set the device for computations
+        # If CUDA (GPU) is available, use it; otherwise, use CPU
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     @classmethod
@@ -34,6 +38,26 @@ class LatentInterpolatorMulti:
     FUNCTION = "interpolate_latents"
 
     def interpolate_latents(self, latent1, latent2, interpolation_algorithm="Linear", mixing_factor=0.5):
+        """
+        Interpolate between two latent representations using various algorithms.
+
+        Args:
+            latent1 (dict): First latent representation.
+            latent2 (dict): Second latent representation.
+            interpolation_algorithm (str): The algorithm to use for interpolation.
+            mixing_factor (float): The factor determining the mix between latent1 and latent2.
+
+        Returns:
+            tuple: A tuple containing a dictionary with the interpolated latent samples.
+
+        This function performs the following steps:
+        1. Validates input latents and extracts their samples.
+        2. Ensures both samples are on the same device and have the same dtype.
+        3. Adjusts the size of sample2 to match sample1 if necessary.
+        4. Applies the chosen interpolation algorithm.
+        5. Performs the actual interpolation between the two samples.
+        6. Returns the interpolated result as a new latent dictionary.
+        """
         if not isinstance(latent1, dict) or not isinstance(latent2, dict):
             raise TypeError("Latents should be dictionaries containing 'samples' key")
 
@@ -98,5 +122,5 @@ class LatentInterpolatorMulti:
         interpolated_sample = interpolated_sample.to(device="cpu", dtype=torch.float32)
         interpolated_latent = {"samples": interpolated_sample}
 
-        print(f"Interpolation algorithm used: {interpolation_algorithm}")
+        #print(f"Interpolation algorithm used: {interpolation_algorithm}")
         return (interpolated_latent,)

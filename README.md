@@ -16,7 +16,7 @@ To install the custom nodes in this repository, follow these easy steps:
 
 1. Clone this repository into your ComfyUI custom_nodes directory:
     ```bash
-    git clone https://github.com/Lilien86/lauger_NP_comfyui
+    git clone https://github.com/Lilien86/Comfyui_Lilien.git
     ```
 2. Restart ComfyUI to load the new nodes and start exploring their potential!
 
